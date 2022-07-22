@@ -3,7 +3,7 @@ import './Projects.css'
 import { Typography, Button } from '@mui/material'
 import { AiOutlineProject } from "react-icons/ai";
 import { Delete } from "@mui/icons-material";
-import avatar from "../../images/avatar.jpg"
+import avatar2 from "../../images/avatar2.png"
 import { FaRegSmileWink } from "react-icons/fa";
 
 const ProjectCard = ({
@@ -38,23 +38,23 @@ const ProjectCard = ({
 
 const Projects = () => {
 
-    const projects = [1,2,3];
+    const projects = [1,2,3,4];
   return (
     <div className="projects">
-        <Typography variant="h3">
+        <Typography variant="h5" style={{fontFamily: "'Josefin Sans', sans-serif", fontSize: 32}} >
             Projects <AiOutlineProject />
         </Typography>
 
         <div className="projectsWrapper">
          {projects.map((project, index) => (
             <ProjectCard url="https://github.com/Tusharbecoding"
-            projectImage={avatar}
+            projectImage={avatar2}
             projectTitle="Sample Project"
             description="This is a sample description"
             technologies="MERN" />
          ))}
         </div>
-        <Typography variant="h3" style={{font: "100 1.2rem 'Ubuntu Mono'"}}>
+        <Typography variant="h5" style={{fontFamily: "'Josefin Sans', sans-serif"}}>
             All the projects above are made by me <FaRegSmileWink />
         </Typography>
     </div>

@@ -192,7 +192,7 @@ const Home = () => {
     </div>
 
     <div className="homeYoutube">
-      <Typography variant = "h3">YOUTUBE</Typography>
+      <Typography variant = "h3" style={{fontFamily: "'Josefin Sans', sans-serif", fontWeight: 'bold'}}>YOUTUBE</Typography>
 
       <div className="homeYoutubeWrapper">
         <YoutubeCard image={template1} title="Text to speech using Python" />

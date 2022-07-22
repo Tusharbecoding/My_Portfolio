@@ -4,7 +4,7 @@
     padding-top: 15vmax;
 }
 
-.projects > h3 {
+.projects > h5 {
     text-align: center;
     color: rgb(255, 255, 255);
     position: absolute;
@@ -18,7 +18,7 @@
     animation: projectHeadingAnimation 1s ease-in-out forwards;
 }
 
-.projects > h3 > svg {
+.projects > h5 > svg {
     margin: 1vmax;
 }
 .projectsWrapper {
