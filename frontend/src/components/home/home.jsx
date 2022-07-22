@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { MouseOutlined } from "@mui/icons-material";
 import template2 from "../../images/template2.png"
 import { Typography } from "@mui/material"
-import TimeLine from '../TimeLine/TimeLine'
+
 import {
   SiCplusplus,
   SiWeb3Dotjs,
@@ -147,12 +147,12 @@ const Home = () => {
     </div>
 
     <div className="homeContainer">
-      <Typography variant = "h3">Resume</Typography>
+      <Typography variant = "h3" className="resumeTitle" style={{fontFamily: "'Josefin Sans', sans-serif", fontWeight: 'bold'}}>RESUME</Typography>
       <img src={resume} alt="" className="resume"/>
     </div>
 
     <div className="homeSkills">
-      <Typography variant = "h3">SKILLS</Typography>
+      <Typography variant = "h3" style={{fontFamily: "'Josefin Sans', sans-serif", fontWeight: 'bold' }}>SKILLS</Typography>
       <div className="homeCubeSkills">
         <div className="homeCubeSkillsFaces homeCubeSkillsFaces1">
           <img src="https://img.icons8.com/color/48/000000/python.png" alt="Face1" />
@@ -164,13 +164,13 @@ const Home = () => {
           <img src="https://img.icons8.com/color/48/000000/git.png" alt="Face3" />
         </div>
         <div className="homeCubeSkillsFaces homeCubeSkillsFaces4">
-          <img src="https://img.icons8.com/color/48/000000/redux.png" alt="Face4" />
+          <img src="https://img.icons8.com/office/48/000000/figma.png" alt="Face4" />
         </div>
         <div className="homeCubeSkillsFaces homeCubeSkillsFaces5">
-          <img src="https://img.icons8.com/officel/48/000000/react.png" alt="Face5" />
+          <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="Face5" />
         </div>
         <div className="homeCubeSkillsFaces homeCubeSkillsFaces6">
-          <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Face6" />
+          <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Face6" />
         </div>
         
 
@@ -195,8 +195,8 @@ const Home = () => {
       <Typography variant = "h3">YOUTUBE</Typography>
 
       <div className="homeYoutubeWrapper">
-        <YoutubeCard image={template1} title="Sample Video" />
-        <YoutubeCard image={template2} title="Sample Video" />        
+        <YoutubeCard image={template1} title="Text to speech using Python" />
+        <YoutubeCard image={template2} title="Website in just 5 minutes" />        
       </div>
     </div>
   </div>

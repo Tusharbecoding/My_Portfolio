@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="about">
         <div className="aboutContainer">
-            <Typography>This is a sample quote</Typography>
+            <Typography>No hugs and kisses, only bugs and fixes</Typography>
         </div>
         <div className="aboutContainer2">
             <div>
@@ -24,7 +24,7 @@ const About = () => {
                     letterSpacing: "5px",
                     textAlign: "right",
                 }}>
-                    This is description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dolorum asperiores, nostrum quam debitis officia. Tempore molestiae quia eius suscipit nemo.
+                UI/UX Design | Frontend Development | Solidity | Python Development | Web3js. I am a full stack developer with a passion for creating beautiful and functional web and mobile applications.
                 </Typography>
             </div>
         </div>

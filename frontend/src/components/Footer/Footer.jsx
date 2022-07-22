@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"   
 import { Typography } from '@mui/material'
-import { Link } from 'react-router-dom'
+
 import { BsGithub, BsYoutube, BsBehance, BsLinkedin } from 'react-icons/bs'
 
 
@@ -15,9 +15,9 @@ const Footer = () => {
             am a full stack developer with a passion for creating beautiful and functional web applications.
             </Typography>
 
-            <Link to="/contact" className="footerContactBtn">
-                <Typography>Contact Us</Typography>
-            </Link>
+            <br />
+            <Typography>Contact me at: tusharchopra02122002@gmail.com</Typography>
+            
         </div>
         <div>
             <Typography variant="h6">Social Media</Typography>

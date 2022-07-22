@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600&display=swap');
+
 .homeCanvas{
     width: 100vw;
     height: 100vh;
@@ -25,7 +27,7 @@
     padding: 2vmax;
     transform: translate(0%, -50%);
     text-align: center;
-    font: 800 4vmax "Josefin Sans", sans-serif;
+    font: 800 4vmax "Josefin Sans", sans-serif  ;
     cursor: default;
   }
   .homeCanvasContainer > h1 > p {
@@ -60,7 +62,7 @@
   }
   
   .homeCanvasBox > h2 {
-    font: 900 4rem "Ubuntu Mono", "Roboto";
+    font: 900 4rem "Josefin Sans", sans-serif ;
     letter-spacing: 22px;
     line-height: 130px;
     color: white;
@@ -71,7 +73,7 @@
     background-color: white;
     transition: all 0.5s;
     color: rgb(0, 0, 0);
-    font: 700 1rem "Ubuntu Mono", "Roboto";
+    font: 700 1rem "Josefin Sans", sans-serif;
     text-decoration: none;
     padding: 2vmax 6vmax;
     box-sizing: border-box;
@@ -102,7 +104,10 @@
     color: rgb(255, 255, 255);
   }
 
+
+
 .homeContainer{
+    font-family: "Josefin Sans", sans-serif;
     background-color: white;
     padding: 4vmax;
     border-radius: 0 0 200px 200px;
@@ -113,6 +118,8 @@
     color: rgba(22, 20, 20, 0.904);
     padding: 4vmax;
 }
+
+
 
 .homeSkills{
     transform: translateY(-200px);
@@ -290,7 +297,7 @@
     }
   
     .homeCanvasBox > h2 {
-      font: 900 2rem "Ubuntu Mono", "Roboto";
+      font: 900 2rem "Josefin Sans", sans-serif;
       letter-spacing: 15px;
       line-height: 60px;
     }
