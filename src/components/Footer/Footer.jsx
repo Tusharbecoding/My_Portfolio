@@ -17,7 +17,7 @@ const Footer = () => {
 
             <br />
             <Typography>Contact me at: tusharchopra02122002@gmail.com</Typography>
-            
+            <Typography>© 2022 Tushar Chopra</Typography>
         </div>
         <div>
             <Typography variant="h6">Social Media</Typography>
