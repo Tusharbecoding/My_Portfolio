@@ -3,7 +3,8 @@ import "./home.css"
 import * as THREE from "three"
 import moonImage from "../../images/moon.jpg"
 import venusImage from "../../images/venus.jpg"
-import spaceImage from "../../images/space2.jpg"
+import spaceImage from "../../images/space3.jpg"
+import sunImage from "../../images/sun.jpg"
 import template1 from "../../images/template1.png"
 import resume from "../../images/Resume.png"
 import { Link } from "react-router-dom";
@@ -44,7 +45,7 @@ const Home = () => {
       const canvas = document.querySelector(".homeCanvas")
       const renderer = new THREE.WebGLRenderer({ canvas });
       
-      const moonGeometry = new THREE.SphereGeometry(2,64,64)
+      const moonGeometry = new THREE.SphereGeometry(3,64,64)
       const moonMaterial = new THREE.MeshStandardMaterial({ map: moonTexture })
       const moon = new THREE.Mesh(moonGeometry, moonMaterial)
 
@@ -54,13 +55,12 @@ const Home = () => {
 
       const pointLight = new THREE.PointLight(0xffffff, 1)
       const pointLight2 = new THREE.PointLight(0xffffff, 0.1)
-      pointLight.position.set(8,5,5)
-      pointLight2.position.set(-8,-5,-5)
+      pointLight.position.set(8,1,3)
+      pointLight2.position.set(-8,-1,-5)
       
 
       
       scene.add(moon)
-      scene.add(venus)
       scene.add(pointLight)
       scene.add(pointLight2)
       scene.background = spaceTexture
@@ -70,36 +70,27 @@ const Home = () => {
         if (e.clientX <= window.innerWidth/2) {
           moon.rotation.x -= constSpeed;
           moon.rotation.y += constSpeed;
-          venus.rotation.x -= constSpeed;
-          venus.rotation.y += constSpeed;
         }
 
         if (e.clientX > window.innerWidth/2) {
           moon.rotation.x -= constSpeed;
           moon.rotation.y -= constSpeed;
-          venus.rotation.x -= constSpeed;
-          venus.rotation.y -= constSpeed;
         }
 
         if (e.clientY <= window.innerHeight/2) {
           moon.rotation.x -= constSpeed;
           moon.rotation.y -= constSpeed;
-          venus.rotation.x -= constSpeed;
-          venus.rotation.y -= constSpeed;
         }
 
         if (e.clientY > window.innerHeight/2) {
           moon.rotation.x -= constSpeed;
           moon.rotation.y += constSpeed;
-          venus.rotation.x -= constSpeed;
-          venus.rotation.y += constSpeed;
         }
 
       })
 
-      venus.position.set(8,5,5)
     
-      camera.position.set(4,4,8)
+      camera.position.set(0.01,0.01,8)
       const animate = () => {
         requestAnimationFrame(animate)
         moon.rotation.y += 0.001
@@ -126,20 +117,11 @@ const Home = () => {
   return (<div className="home">
     <canvas className="homeCanvas"></canvas>
     <div className="homeCanvasContainer">
-    <Typography variant="h1">
-      <p>T</p>
-      <p>U</p>
-      <p>S</p>
-      <p>H</p>
-      <p>A</p>
-      <p>R</p>
-    </Typography>
     <div className="homeCanvasBox">
-          <Typography variant="h2">DEVELOPER</Typography>
-          <Typography variant="h2">DESIGNER</Typography>
-          <Typography variant="h2">LEARNER</Typography>
+          <Typography variant="h2">DEVELOPER | </Typography>
+          <Typography variant="h2"> DESIGNER </Typography>
     </div>
-    <Link to="/projects">VIEW WORK</Link>
+    
     </div>
 
     <div className="homeScrollBtn">
