@@ -211,6 +211,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     right: -300px;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -219,7 +220,7 @@
 
 .homeSkillsBox > svg {
     width: 100px;
-    font-size: 5vmax;
+    font-size: 4vmax;
     color: rgb(255, 255, 255);
     transition: all 0.5s;
     margin: 10px;

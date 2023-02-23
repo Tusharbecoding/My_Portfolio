@@ -22,11 +22,11 @@ const Header = () => {
         link1Text="Home"
         link2Text="About"
         link3Text="Projects"
-        link4Text={false}
-        link3Margin="90px"
+        link4Text="Contact"
         link1Url="/"
         link2Url="/about"
         link3Url="/projects"
+        link4Url="/contact"
         link1Family="'Josefin Sans', sans-serif"
         link1ColorHover="white"
         link1Color="HSL(250, 100%, 75%)"

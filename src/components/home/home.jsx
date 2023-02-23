@@ -13,14 +13,16 @@ import { Typography } from "@mui/material"
 import {
   SiCplusplus,
   SiWeb3Dotjs,
+  SiNextdotjs,
   SiJavascript,
   SiSolidity,
   SiNodedotjs,
   SiExpress,
-  SiCss3,
-  SiHtml5,
+  SiDocker,
+  SiKubernetes,
   SiThreedotjs,
   SiRedux,
+  SiTypescript,
 } from "react-icons/si";
 import YoutubeCard from "../YoutubeCard/YoutubeCard";
 
@@ -159,11 +161,13 @@ const Home = () => {
       
       <div className="homeSkillsBox" id="homeSkillsBox">
         <SiCplusplus />
-        <SiHtml5 />
-        <SiCss3 />
+        <SiTypescript />
+        <SiDocker />
+        <SiKubernetes/>
         <SiJavascript />
         <SiSolidity />
         <SiExpress />
+        <SiNextdotjs/>
         <SiWeb3Dotjs />
         <SiNodedotjs />
         <SiThreedotjs />
