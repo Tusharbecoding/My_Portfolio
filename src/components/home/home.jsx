@@ -4,10 +4,8 @@ import * as THREE from "three"
 import moonImage from "../../images/moon.jpg"
 import venusImage from "../../images/venus.jpg"
 import spaceImage from "../../images/space3.jpg"
-import sunImage from "../../images/sun.jpg"
 import template1 from "../../images/template1.png"
 import resume from "../../images/Resume.png"
-import { Link } from "react-router-dom";
 import { MouseOutlined } from "@mui/icons-material";
 import template2 from "../../images/template2.png"
 import { Typography } from "@mui/material"
